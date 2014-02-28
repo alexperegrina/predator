@@ -1,0 +1,234 @@
+\hypertarget{class_especie}{
+\section{\-Referencia de la \-Clase \-Especie}
+\label{class_especie}\index{\-Especie@{\-Especie}}
+}
+
+
+\-Representa una \hyperlink{class_especie}{\-Especie}.  
+
+
+\subsection*{\-Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_especie_a272c2488719cc9874b2f174906675b3d}{\-Especie} ()
+\begin{DoxyCompactList}\small\item\em \-Creadora por defecto. \-Se ejecuta autom�ticamente al declarar una \hyperlink{class_especie}{\-Especie}. \end{DoxyCompactList}\item 
+\hyperlink{class_especie_a4001224bd8764017f0e5a0c9336f3d2b}{\-Especie} (const \hyperlink{class_especie}{\-Especie} \&e)
+\begin{DoxyCompactList}\small\item\em \-Creadora copiadora. \-Permite declarar una \hyperlink{class_especie}{\-Especie} nueva como copia de otra ya existente. \end{DoxyCompactList}\item 
+\hyperlink{class_especie_abd21378dde6e8348d823c6f87a1c0658}{$\sim$\-Especie} ()
+\begin{DoxyCompactList}\small\item\em \-Destructora. \end{DoxyCompactList}\item 
+void \hyperlink{class_especie_a63baa790749c0b99a42182f67976936d}{leer\-\_\-especie} ()
+\begin{DoxyCompactList}\small\item\em \-Lee los parametros de la \hyperlink{class_especie}{\-Especie}. \end{DoxyCompactList}\item 
+void \hyperlink{class_especie_aef62cc5a54119148daa07ce8289fe389}{modificar\-\_\-pref} ()
+\begin{DoxyCompactList}\small\item\em modifica las preferencias de presas \end{DoxyCompactList}\item 
+int \hyperlink{class_especie_a081f29e565622c7ebec4a865586d377b}{get\-Id} () const 
+\begin{DoxyCompactList}\small\item\em consulta id \hyperlink{class_especie}{\-Especie} \end{DoxyCompactList}\item 
+int \hyperlink{class_especie_a2de3ea369b5d54b1bf9f24004e88abea}{get\-Npres} () const 
+\begin{DoxyCompactList}\small\item\em consulta el numero de presas \end{DoxyCompactList}\item 
+int \hyperlink{class_especie_a6178b88be2599f37816b86b39d954137}{get\-Valor\-Alimento} () const 
+\begin{DoxyCompactList}\small\item\em consulta el \-Valor \-Alimenticio \end{DoxyCompactList}\item 
+int \hyperlink{class_especie_a5a7cff104f89e230f5d320f692e978b1}{get\-Min\-Alimento} () const 
+\begin{DoxyCompactList}\small\item\em consulta el minimo \-Alimento a consumir \end{DoxyCompactList}\item 
+int \hyperlink{class_especie_a3abfa7701a9a4a7043d10e5254d6022c}{get\-Iessimo} (const int \&i) const 
+\begin{DoxyCompactList}\small\item\em consulta el iessimo \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Descripción detallada}
+\-Representa una \hyperlink{class_especie}{\-Especie}. 
+
+\-Definición en la línea 10 del archivo \-Especie.\-hpp.
+
+
+
+\subsection{\-Documentación del constructor y destructor}
+\hypertarget{class_especie_a272c2488719cc9874b2f174906675b3d}{
+\index{\-Especie@{\-Especie}!\-Especie@{\-Especie}}
+\index{\-Especie@{\-Especie}!Especie@{\-Especie}}
+\subsubsection[{\-Especie}]{\setlength{\rightskip}{0pt plus 5cm}\-Especie\-::\-Especie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_especie_a272c2488719cc9874b2f174906675b3d}
+
+
+\-Creadora por defecto. \-Se ejecuta autom�ticamente al declarar una \hyperlink{class_especie}{\-Especie}. 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: \-El resultado es una \hyperlink{class_especie}{\-Especie} sin parametros 
+\end{DoxyPostcond}
+\hypertarget{class_especie_a4001224bd8764017f0e5a0c9336f3d2b}{
+\index{\-Especie@{\-Especie}!\-Especie@{\-Especie}}
+\index{\-Especie@{\-Especie}!Especie@{\-Especie}}
+\subsubsection[{\-Especie}]{\setlength{\rightskip}{0pt plus 5cm}\-Especie\-::\-Especie (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Especie} \&}]{e}
+\end{DoxyParamCaption}
+)}}
+\label{class_especie_a4001224bd8764017f0e5a0c9336f3d2b}
+
+
+\-Creadora copiadora. \-Permite declarar una \hyperlink{class_especie}{\-Especie} nueva como copia de otra ya existente. 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: especie inicializada 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: \-El resultado es una \hyperlink{class_especie}{\-Especie} igual que e 
+\end{DoxyPostcond}
+\hypertarget{class_especie_abd21378dde6e8348d823c6f87a1c0658}{
+\index{\-Especie@{\-Especie}!$\sim$\-Especie@{$\sim$\-Especie}}
+\index{$\sim$\-Especie@{$\sim$\-Especie}!Especie@{\-Especie}}
+\subsubsection[{$\sim$\-Especie}]{\setlength{\rightskip}{0pt plus 5cm}\-Especie\-::$\sim$\-Especie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_especie_abd21378dde6e8348d823c6f87a1c0658}
+
+
+\-Destructora. 
+
+
+
+\subsection{\-Documentación de las funciones miembro}
+\hypertarget{class_especie_a63baa790749c0b99a42182f67976936d}{
+\index{\-Especie@{\-Especie}!leer\-\_\-especie@{leer\-\_\-especie}}
+\index{leer\-\_\-especie@{leer\-\_\-especie}!Especie@{\-Especie}}
+\subsubsection[{leer\-\_\-especie}]{\setlength{\rightskip}{0pt plus 5cm}void \-Especie\-::leer\-\_\-especie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_especie_a63baa790749c0b99a42182f67976936d}
+
+
+\-Lee los parametros de la \hyperlink{class_especie}{\-Especie}. 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: ciertos 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: cierto 
+\end{DoxyPostcond}
+\hypertarget{class_especie_aef62cc5a54119148daa07ce8289fe389}{
+\index{\-Especie@{\-Especie}!modificar\-\_\-pref@{modificar\-\_\-pref}}
+\index{modificar\-\_\-pref@{modificar\-\_\-pref}!Especie@{\-Especie}}
+\subsubsection[{modificar\-\_\-pref}]{\setlength{\rightskip}{0pt plus 5cm}void \-Especie\-::modificar\-\_\-pref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_especie_aef62cc5a54119148daa07ce8289fe389}
+
+
+modifica las preferencias de presas 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: cierto 
+\end{DoxyPostcond}
+\hypertarget{class_especie_a081f29e565622c7ebec4a865586d377b}{
+\index{\-Especie@{\-Especie}!get\-Id@{get\-Id}}
+\index{get\-Id@{get\-Id}!Especie@{\-Especie}}
+\subsubsection[{get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int \-Especie\-::get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_especie_a081f29e565622c7ebec4a865586d377b}
+
+
+consulta id \hyperlink{class_especie}{\-Especie} 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: cierto 
+\end{DoxyPostcond}
+\hypertarget{class_especie_a2de3ea369b5d54b1bf9f24004e88abea}{
+\index{\-Especie@{\-Especie}!get\-Npres@{get\-Npres}}
+\index{get\-Npres@{get\-Npres}!Especie@{\-Especie}}
+\subsubsection[{get\-Npres}]{\setlength{\rightskip}{0pt plus 5cm}int \-Especie\-::get\-Npres (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_especie_a2de3ea369b5d54b1bf9f24004e88abea}
+
+
+consulta el numero de presas 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: cierto 
+\end{DoxyPostcond}
+\hypertarget{class_especie_a6178b88be2599f37816b86b39d954137}{
+\index{\-Especie@{\-Especie}!get\-Valor\-Alimento@{get\-Valor\-Alimento}}
+\index{get\-Valor\-Alimento@{get\-Valor\-Alimento}!Especie@{\-Especie}}
+\subsubsection[{get\-Valor\-Alimento}]{\setlength{\rightskip}{0pt plus 5cm}int \-Especie\-::get\-Valor\-Alimento (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_especie_a6178b88be2599f37816b86b39d954137}
+
+
+consulta el \-Valor \-Alimenticio 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: cierto 
+\end{DoxyPostcond}
+\hypertarget{class_especie_a5a7cff104f89e230f5d320f692e978b1}{
+\index{\-Especie@{\-Especie}!get\-Min\-Alimento@{get\-Min\-Alimento}}
+\index{get\-Min\-Alimento@{get\-Min\-Alimento}!Especie@{\-Especie}}
+\subsubsection[{get\-Min\-Alimento}]{\setlength{\rightskip}{0pt plus 5cm}int \-Especie\-::get\-Min\-Alimento (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{class_especie_a5a7cff104f89e230f5d320f692e978b1}
+
+
+consulta el minimo \-Alimento a consumir 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: cierto 
+\end{DoxyPostcond}
+\hypertarget{class_especie_a3abfa7701a9a4a7043d10e5254d6022c}{
+\index{\-Especie@{\-Especie}!get\-Iessimo@{get\-Iessimo}}
+\index{get\-Iessimo@{get\-Iessimo}!Especie@{\-Especie}}
+\subsubsection[{get\-Iessimo}]{\setlength{\rightskip}{0pt plus 5cm}int \-Especie\-::get\-Iessimo (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{i}
+\end{DoxyParamCaption}
+) const}}
+\label{class_especie_a3abfa7701a9a4a7043d10e5254d6022c}
+
+
+consulta el iessimo 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: 0 $<$= i $<$= \-N 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: cierto 
+\end{DoxyPostcond}
+
+
+\-La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_especie_8hpp}{\-Especie.\-hpp}\end{DoxyCompactItemize}

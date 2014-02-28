@@ -1,0 +1,146 @@
+\hypertarget{class_cjt__region}{
+\section{\-Referencia de la \-Clase \-Cjt\-\_\-region}
+\label{class_cjt__region}\index{\-Cjt\-\_\-region@{\-Cjt\-\_\-region}}
+}
+
+
+\-Representa un \-Conjunto de region.  
+
+
+\subsection*{\-Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cjt__region_acd267eb832fc34c1a8b068c202befef0}{\-Cjt\-\_\-region} ()
+\begin{DoxyCompactList}\small\item\em \-Creadora por defecto. \-Se ejecuta automaticamente al declarar un \hyperlink{class_cjt__region}{\-Cjt\-\_\-region}. \end{DoxyCompactList}\item 
+\hyperlink{class_cjt__region_aaa16d196a8249fc74f237454dbf67145}{$\sim$\-Cjt\-\_\-region} ()
+\item 
+void \hyperlink{class_cjt__region_a5dedc9d3b3b3aa4580a3c8d2feefe784}{leer\-\_\-regiones} (int numesp)
+\begin{DoxyCompactList}\small\item\em \-Lectura de la estructura del arbol y de las regiones. \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__region_aeb226b4972f14bd3897ef5c4bce2fd38}{migracion} (const int \&v, const int \&idreg, const int \&idesp, const int \&h, const int \&g)
+\begin{DoxyCompactList}\small\item\em migracion de una region a otra de especies(realiza la migracion segun 2 condiciones) \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__region_a1e90f5029b4ccb2819a0e24593a856a9}{anadir\-\_\-individuos} (const int \&m, const int \&r, const int \&e)
+\begin{DoxyCompactList}\small\item\em incrementamos el numero de individuos /pre\-: m $>$ 0, 1 $<$= r $<$= \-R, 1 $<$= e $<$= \-N /post\-: cierto \end{DoxyCompactList}\item 
+void \hyperlink{class_cjt__region_ab04b397ef827894b19d25e19325d2980}{lluita\-\_\-regions} (\hyperlink{class_cjt__especie}{\-Cjt\-\_\-especie} \&cjtesp)
+\begin{DoxyCompactList}\small\item\em lluita de totes les regions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Descripción detallada}
+\-Representa un \-Conjunto de region. 
+
+\-Definición en la línea 11 del archivo \-Cjt\-\_\-region.\-hpp.
+
+
+
+\subsection{\-Documentación del constructor y destructor}
+\hypertarget{class_cjt__region_acd267eb832fc34c1a8b068c202befef0}{
+\index{\-Cjt\-\_\-region@{\-Cjt\-\_\-region}!\-Cjt\-\_\-region@{\-Cjt\-\_\-region}}
+\index{\-Cjt\-\_\-region@{\-Cjt\-\_\-region}!Cjt_region@{\-Cjt\-\_\-region}}
+\subsubsection[{\-Cjt\-\_\-region}]{\setlength{\rightskip}{0pt plus 5cm}\-Cjt\-\_\-region\-::\-Cjt\-\_\-region (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_cjt__region_acd267eb832fc34c1a8b068c202befef0}
+
+
+\-Creadora por defecto. \-Se ejecuta automaticamente al declarar un \hyperlink{class_cjt__region}{\-Cjt\-\_\-region}. 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: cierto 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: es un conjunto de regiones vacio 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__region_aaa16d196a8249fc74f237454dbf67145}{
+\index{\-Cjt\-\_\-region@{\-Cjt\-\_\-region}!$\sim$\-Cjt\-\_\-region@{$\sim$\-Cjt\-\_\-region}}
+\index{$\sim$\-Cjt\-\_\-region@{$\sim$\-Cjt\-\_\-region}!Cjt_region@{\-Cjt\-\_\-region}}
+\subsubsection[{$\sim$\-Cjt\-\_\-region}]{\setlength{\rightskip}{0pt plus 5cm}\-Cjt\-\_\-region\-::$\sim$\-Cjt\-\_\-region (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_cjt__region_aaa16d196a8249fc74f237454dbf67145}
+
+
+\subsection{\-Documentación de las funciones miembro}
+\hypertarget{class_cjt__region_a5dedc9d3b3b3aa4580a3c8d2feefe784}{
+\index{\-Cjt\-\_\-region@{\-Cjt\-\_\-region}!leer\-\_\-regiones@{leer\-\_\-regiones}}
+\index{leer\-\_\-regiones@{leer\-\_\-regiones}!Cjt_region@{\-Cjt\-\_\-region}}
+\subsubsection[{leer\-\_\-regiones}]{\setlength{\rightskip}{0pt plus 5cm}void \-Cjt\-\_\-region\-::leer\-\_\-regiones (
+\begin{DoxyParamCaption}
+\item[{int}]{numesp}
+\end{DoxyParamCaption}
+)}}
+\label{class_cjt__region_a5dedc9d3b3b3aa4580a3c8d2feefe784}
+
+
+\-Lectura de la estructura del arbol y de las regiones. 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: numesp = mida del \hyperlink{class_cjt__especie}{\-Cjt\-\_\-especie} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: cierto 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__region_aeb226b4972f14bd3897ef5c4bce2fd38}{
+\index{\-Cjt\-\_\-region@{\-Cjt\-\_\-region}!migracion@{migracion}}
+\index{migracion@{migracion}!Cjt_region@{\-Cjt\-\_\-region}}
+\subsubsection[{migracion}]{\setlength{\rightskip}{0pt plus 5cm}void \-Cjt\-\_\-region\-::migracion (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{v, }
+\item[{const int \&}]{idreg, }
+\item[{const int \&}]{idesp, }
+\item[{const int \&}]{h, }
+\item[{const int \&}]{g}
+\end{DoxyParamCaption}
+)}}
+\label{class_cjt__region_aeb226b4972f14bd3897ef5c4bce2fd38}
+
+
+migracion de una region a otra de especies(realiza la migracion segun 2 condiciones) 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: (v == 1 o v == 2), 1 $<$= idreg $<$= \-R, 1 $<$= idesp $<$= \-N, 1 $<$= h $<$= \-Region.\-numesp\mbox{[}\mbox{]}.size(), g $>$ 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: cierto 
+\end{DoxyPostcond}
+\hypertarget{class_cjt__region_a1e90f5029b4ccb2819a0e24593a856a9}{
+\index{\-Cjt\-\_\-region@{\-Cjt\-\_\-region}!anadir\-\_\-individuos@{anadir\-\_\-individuos}}
+\index{anadir\-\_\-individuos@{anadir\-\_\-individuos}!Cjt_region@{\-Cjt\-\_\-region}}
+\subsubsection[{anadir\-\_\-individuos}]{\setlength{\rightskip}{0pt plus 5cm}void \-Cjt\-\_\-region\-::anadir\-\_\-individuos (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{m, }
+\item[{const int \&}]{r, }
+\item[{const int \&}]{e}
+\end{DoxyParamCaption}
+)}}
+\label{class_cjt__region_a1e90f5029b4ccb2819a0e24593a856a9}
+
+
+incrementamos el numero de individuos /pre\-: m $>$ 0, 1 $<$= r $<$= \-R, 1 $<$= e $<$= \-N /post\-: cierto 
+
+\hypertarget{class_cjt__region_ab04b397ef827894b19d25e19325d2980}{
+\index{\-Cjt\-\_\-region@{\-Cjt\-\_\-region}!lluita\-\_\-regions@{lluita\-\_\-regions}}
+\index{lluita\-\_\-regions@{lluita\-\_\-regions}!Cjt_region@{\-Cjt\-\_\-region}}
+\subsubsection[{lluita\-\_\-regions}]{\setlength{\rightskip}{0pt plus 5cm}void \-Cjt\-\_\-region\-::lluita\-\_\-regions (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cjt\-\_\-especie} \&}]{cjtesp}
+\end{DoxyParamCaption}
+)}}
+\label{class_cjt__region_ab04b397ef827894b19d25e19325d2980}
+
+
+lluita de totes les regions 
+
+\begin{DoxyPrecond}{\-Precondición}
+\-: \hyperlink{class_cjt__especie}{\-Cjt\-\_\-especie} inicializado 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{\-Postcondición}
+\-: cierto 
+\end{DoxyPostcond}
+
+
+\-La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cjt__region_8hpp}{\-Cjt\-\_\-region.\-hpp}\end{DoxyCompactItemize}

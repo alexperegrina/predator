@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Predator: Fichero Fuente Especie.hpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Predator
+   &#160;<span id="projectnumber">versi√≥n 1 13-NOV-2012</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generado por Doxygen 1.7.5.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>P√°gina&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Especie.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="_especie_8hpp.html">Ir a la documentaci√≥n de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef _ESPECIE_HPP_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define _ESPECIE_HPP_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="comment">//#include &quot;utils.PRO2&quot;</span>
+<a name="l00004"></a>00004 <span class="comment">//#include &lt;list&gt;</span>
+<a name="l00005"></a>00005 <span class="comment">//#include &lt;vector&gt;</span>
+<a name="l00006"></a>00006 
+<a name="l00010"></a><a class="code" href="class_especie.html">00010</a> <span class="keyword">class </span><a class="code" href="class_especie.html" title="Representa una Especie.">Especie</a> {
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="keyword">private</span>:
+<a name="l00014"></a>00014     <span class="keywordtype">int</span> id;
+<a name="l00016"></a>00016     <span class="keywordtype">int</span> npres;
+<a name="l00018"></a>00018     vector&lt;int&gt; presas; 
+<a name="l00020"></a>00020     <span class="keywordtype">int</span> valorAlimento;
+<a name="l00022"></a>00022     <span class="keywordtype">int</span> minAlimento;
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024 <span class="keyword">public</span>:
+<a name="l00025"></a>00025     <span class="comment">//Constructoras</span>
+<a name="l00031"></a>00031 <span class="comment"></span>    <a class="code" href="class_especie.html#a272c2488719cc9874b2f174906675b3d" title="Creadora por defecto. Se ejecuta autom·ticamente al declarar una Especie.">Especie</a>();
+<a name="l00032"></a>00032     
+<a name="l00038"></a>00038     <a class="code" href="class_especie.html#a272c2488719cc9874b2f174906675b3d" title="Creadora por defecto. Se ejecuta autom·ticamente al declarar una Especie.">Especie</a>(<span class="keyword">const</span> <a class="code" href="class_especie.html" title="Representa una Especie.">Especie</a>&amp; e);
+<a name="l00039"></a>00039     
+<a name="l00040"></a>00040     <span class="comment">//Destructora</span>
+<a name="l00042"></a>00042 <span class="comment"></span>    <a class="code" href="class_especie.html#abd21378dde6e8348d823c6f87a1c0658" title="Destructora.">~Especie</a>();
+<a name="l00043"></a>00043     
+<a name="l00044"></a>00044     <span class="comment">//Modificadoras</span>
+<a name="l00045"></a>00045     
+<a name="l00050"></a>00050     <span class="keywordtype">void</span> <a class="code" href="class_especie.html#a63baa790749c0b99a42182f67976936d" title="Lee los parametros de la Especie.">leer_especie</a>();
+<a name="l00051"></a>00051     
+<a name="l00052"></a>00052     
+<a name="l00057"></a>00057     <span class="keywordtype">void</span> <a class="code" href="class_especie.html#aef62cc5a54119148daa07ce8289fe389" title="modifica las preferencias de presas">modificar_pref</a>();
+<a name="l00058"></a>00058     
+<a name="l00059"></a>00059     <span class="comment">//Consultoras</span>
+<a name="l00060"></a>00060     
+<a name="l00065"></a>00065      <span class="keywordtype">int</span> <a class="code" href="class_especie.html#a081f29e565622c7ebec4a865586d377b" title="consulta id Especie">getId</a>() <span class="keyword">const</span>;
+<a name="l00066"></a>00066      
+<a name="l00071"></a>00071      <span class="keywordtype">int</span> <a class="code" href="class_especie.html#a2de3ea369b5d54b1bf9f24004e88abea" title="consulta el numero de presas">getNpres</a>() <span class="keyword">const</span>;
+<a name="l00072"></a>00072      
+<a name="l00077"></a>00077      <span class="keywordtype">int</span> <a class="code" href="class_especie.html#a6178b88be2599f37816b86b39d954137" title="consulta el Valor Alimenticio">getValorAlimento</a>() <span class="keyword">const</span>;
+<a name="l00078"></a>00078      
+<a name="l00083"></a>00083     <span class="keywordtype">int</span> <a class="code" href="class_especie.html#a5a7cff104f89e230f5d320f692e978b1" title="consulta el minimo Alimento a consumir">getMinAlimento</a>() <span class="keyword">const</span>;
+<a name="l00084"></a>00084     
+<a name="l00089"></a>00089     <span class="keywordtype">int</span> <a class="code" href="class_especie.html#a3abfa7701a9a4a7043d10e5254d6022c" title="consulta el iessimo">getIessimo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;i) <span class="keyword">const</span>;
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 };
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 <span class="preprocessor">#endif</span>
+</pre></div></div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.5.1
+</small></address>
+
+</body>
+</html>

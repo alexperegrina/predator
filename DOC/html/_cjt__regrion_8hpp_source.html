@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Predator: Fichero Fuente Cjt_regrion.hpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Predator
+   &#160;<span id="projectnumber">versión 1 13-NOV-2012</span>
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generado por Doxygen 1.7.5.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cjt_regrion.hpp</div>  </div>
+</div>
+<div class="contents">
+<a href="_cjt__regrion_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef _CJTREGION_HPP_</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define _CJTREGION_HPP_</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_region_8hpp.html">Region.hpp</a>&quot;</span>
+<a name="l00004"></a>00004 <span class="comment">//#include &quot;Arbre.hpp&quot;</span>
+<a name="l00005"></a>00005 
+<a name="l00006"></a>00006 
+<a name="l00010"></a><a class="code" href="class_cjt__region.html">00010</a> <span class="keyword">class </span><a class="code" href="class_cjt__region.html" title="Representa un Conjunto de region.">Cjt_region</a> {
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 <span class="keyword">private</span>:
+<a name="l00014"></a>00014     <span class="keywordtype">int</span> R;
+<a name="l00016"></a>00016     Arbre&lt;int&gt; estruct;
+<a name="l00018"></a>00018     vector&lt;Region&gt; vreg;
+<a name="l00019"></a>00019     
+<a name="l00024"></a>00024     <span class="keywordtype">void</span> leer_estructura_arbre(Arbre&lt;int&gt; &amp;a,<span class="keywordtype">int</span> marca,<span class="keywordtype">int</span> &amp;numreg);
+<a name="l00025"></a>00025     
+<a name="l00030"></a>00030     <span class="keywordtype">void</span> leer_region(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;numesp);
+<a name="l00031"></a>00031     
+<a name="l00036"></a>00036     vector&lt;pair&lt;int,int&gt; &gt; condicio1(Arbre&lt;int&gt; &amp;a,<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;idreg, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;idesp, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;h, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;g);
+<a name="l00037"></a>00037     
+<a name="l00042"></a>00042     vector&lt;pair&lt;int,int&gt; &gt; condicio2(Arbre&lt;int&gt; &amp;a,<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;idreg, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;idesp, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;h, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;g);
+<a name="l00043"></a>00043     
+<a name="l00044"></a>00044     
+<a name="l00045"></a>00045     
+<a name="l00046"></a>00046 <span class="keyword">public</span>:
+<a name="l00047"></a>00047     <span class="comment">//Constructoras</span>
+<a name="l00053"></a>00053 <span class="comment"></span>    <a class="code" href="class_cjt__region.html#acd267eb832fc34c1a8b068c202befef0" title="Creadora por defecto. Se ejecuta automaticamente al declarar un Cjt_region.">Cjt_region</a>();
+<a name="l00054"></a>00054     
+<a name="l00055"></a>00055     <span class="comment">//destructora</span>
+<a name="l00056"></a>00056     <a class="code" href="class_cjt__region.html#aaa16d196a8249fc74f237454dbf67145">~Cjt_region</a>();
+<a name="l00057"></a>00057     
+<a name="l00058"></a>00058     <span class="comment">//modificadoras</span>
+<a name="l00059"></a>00059     
+<a name="l00065"></a>00065     <span class="keywordtype">void</span> <a class="code" href="class_cjt__region.html#a42dc15d725c21e1af73f7b82b7f33629" title="Lectura de la estructura del arbol y de las regiones.">leer_arbre_region</a>(<span class="keywordtype">int</span> numesp);
+<a name="l00066"></a>00066     
+<a name="l00071"></a>00071     <span class="keywordtype">void</span> <a class="code" href="class_cjt__region.html#acba101fcc6af7ca3caadc583593a5a9d" title="migracion de una region a otra de especies(realiza la migracion segun 2 condiciones)">migracion</a>(<a class="code" href="class_cjt__especie.html">Cjt_especie</a> &amp;cjesp, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;v,<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;idreg, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;idesp, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;h, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;g);
+<a name="l00072"></a>00072     
+<a name="l00077"></a>00077     <span class="keywordtype">void</span> <a class="code" href="class_cjt__region.html#a91323773332b05aaf0edeaf5fc202cab" title="a�adimos al final de la lista de la especie el conjunto de identificadores /pre: 1 &lt;= r &lt;= R...">anadir_individuo</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;r, list&lt;int&gt; l,<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;e);
+<a name="l00078"></a>00078     
+<a name="l00083"></a>00083     <span class="keywordtype">void</span> <a class="code" href="class_cjt__region.html#ab04b397ef827894b19d25e19325d2980" title="lluita de totes les regions">lluita_regions</a>(<a class="code" href="class_cjt__especie.html">Cjt_especie</a> &amp;cjtesp);
+<a name="l00084"></a>00084     
+<a name="l00085"></a>00085     <span class="comment">//escritura</span>
+<a name="l00086"></a>00086     
+<a name="l00091"></a>00091     <span class="keywordtype">void</span> escribir_poblacion()
+<a name="l00092"></a>00092     
+<a name="l00093"></a>00093 };
+<a name="l00094"></a>00094 
+<a name="l00095"></a>00095 <span class="preprocessor">#endif</span>
+</pre></div></div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.5.1
+</small></address>
+
+</body>
+</html>
